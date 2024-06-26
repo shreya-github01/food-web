@@ -1,23 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebFood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #3a3a3a;
             color: #f8d7a8;
-            background-image: url(bg1.jpg);
+            background-image: url(bg8.jpg);
             background-repeat: no-repeat;
             background-size: 100%;
+           
         }
 
         header {
             background-color: #2e2e2e;
-            padding: 15px;
+            padding: 8px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -26,6 +30,7 @@
         header h1 {
             margin: 0;
             color: #f8d7a8;
+            font-family: "Playwrite NG Modern", cursive;
         }
 
         header nav a {
@@ -33,29 +38,44 @@
             text-decoration: none;
             margin-left: 20px;
         }
+        header nav a:hover{
+            color:#ff987e
+        }
 
         main {
-            text-align: center;
             padding: 20px;
+            text-align: right;
+            margin-right: 220px;
         }
 
         main h2 {
             color: #f8d7a8;
+            margin-right: 65px;
+            font-size: 35px;
+            margin-top: 30px;
+            font-family: "Forum", serif;
+            
         }
 
         .meal-container {
             display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
+            gap: 80px;
+            margin-top: 80px;
+            margin-left: 660px;
+            width:60%;
+            font-family: "Forum", serif;
+            font-size: large;
         }
-
+        
         .meal-card {
             background-color: #f8d7a8;
             border-radius: 8px;
             overflow: hidden;
             text-align: center;
-            width: 300px;
+            width: 500px;
+        }
+        .meal-card:hover{
+            transform: translateY(-5px);
         }
 
         .meal-card img {
@@ -69,7 +89,7 @@
         }
 
         .meal-card button {
-            background-color: #ff8566;
+            background-color: #ff7755;
             border: none;
             color: white;
             padding: 10px 20px;
@@ -85,22 +105,30 @@
         .meal-card a {
             text-decoration: none;
         }
+        .meal-card button:hover{
+            background-color: rgb(255, 100, 44);
+
+        }
+
     </style>
 </head>
 <body>
     <header>
-        <h1>WEBFOOD</h1>
+        <h1>TastERz.</h1>
         <nav>
-            <a href="#">Browse Meal</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Login</a>
+            <a href="#">Sign Up</a>
             <a href="#">My Orders</a>
         </nav>
     </header>
     <main>
-        <h2>Browse Our Delicious Meal</h2>
+        <h2>Browse Our Delicious Food</h2>
         <div class="meal-container">
             <div class="meal-card">
-                <img src="meal5.jpg" alt="Indo-Chinese">
-                <h3>Indo-Chinese</h3>
+                <img src="meal5.jpg" alt="Indo-Chinese Cuisine">
+                <h3>Indo-Chinese Cuisine</h3>
                 <a href="next1.html"><button>Check Out</button></a>
             </div>
             <div class="meal-card">
